@@ -2,235 +2,83 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	
 	<meta content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
 	<meta content="#000000" name="theme-color">
+	
 	<meta content="https://mnmll.ist/assets/favicon/browserconfig.xml" name="msapplication-config">
+	
 	<meta content="#000000" name="msapplication-TileColor">
+	
 	<link href="assets/filter_style.css" rel="stylesheet" />
+	
 	<link href="assets/main_v1_3.css" rel="stylesheet" />
+	
 	<title></title>
 </head>
 <body data-scheme="carl">
-	<div id="ymca-component">
-		<div id="ymca-scroll-position-target"></div>
-		<nav class="ymca-shell-toolbar" id="ymca-shell-toolbar">
-			<div id="ymca-filters">
-				<div class="ymca-toolbar" id="ymca-toolbar">
-					<form class="ymca-form">
-						<span class="ymca-postal-code ymca-input-group" id="ymca-toolbar-zipcode"><label class="ymca-label" for="ymca-zipcode">ZipCode</label> <input aria-label="zip" class="ymca-zipcode ymca-number ymca-input" id="ymca-zipcode" maxlength="5" name="postal-code" placeholder="Zip Code" type="text" value="32825"></span> <span class="ymca-distance-filter ymca-input-group" id="ymca-toolbar-distance"><label class="ymca-label" for="ymca-distance">Distance</label> <select class="ymca-distance ymca-select" data-placeholder="Distance" name="distance">
-							<option value="10">
-								within 10 miles
-							</option>
-							<option value="15">
-								within 15 miles
-							</option>
-							<option value="20">
-								within 20 miles
-							</option>
-							<option value="50">
-								within 50 miles
-							</option>
-							<option value="0">
-								Any Distance
-							</option>
-						</select></span> <span class="ymca-ages ymca-input-group" id="ymca-toolbar-ages"><label class="ymca-label" for="ymca-age">Age</label> <select aria-label="age" class="ymca-age ymca-select">
-							<option value="&lt; 1">
-								&lt; 1
-							</option>
-							<option value="1">
-								1
-							</option>
-							<option value="2">
-								2
-							</option>
-							<option value="3">
-								3
-							</option>
-							<option value="4">
-								4
-							</option>
-							<option value="5">
-								5
-							</option>
-							<option value="6">
-								6
-							</option>
-							<option value="7">
-								7
-							</option>
-							<option value="8">
-								8
-							</option>
-							<option value="9">
-								9
-							</option>
-							<option value="10">
-								10
-							</option>
-							<option value="11">
-								11
-							</option>
-							<option value="12">
-								12
-							</option>
-							<option value="13">
-								13
-							</option>
-							<option value="14">
-								14
-							</option>
-							<option value="15">
-								15
-							</option>
-							<option value="16">
-								16
-							</option>
-							<option value="17">
-								17
-							</option>
-							<option value="18">
-								18
-							</option>
-							<option value="19">
-								19
-							</option>
-							<option value="20">
-								20
-							</option>
-							<option value="21">
-								21
-							</option>
-							<option value="22">
-								22
-							</option>
-							<option value="23">
-								23
-							</option>
-							<option value="24">
-								24
-							</option>
-							<option value="25">
-								25
-							</option>
-							<option value="26">
-								26
-							</option>
-							<option value="27">
-								27
-							</option>
-							<option value="28">
-								28
-							</option>
-							<option value="29">
-								29
-							</option>
-							<option value="30">
-								30
-							</option>
-							<option value="31">
-								&gt;30
-							</option>
-						</select></span> <span class="ymca-times ymca-input-group" id="ymca-toolbar-times"><label class="ymca-label" for="ymca-time">Time</label> <select class="ymca-times-select ymca-select" data-placeholder="TimeOfDay" name="times">
-							<option value="12:00 AM-11:59 PM">
-								Any Time
-							</option>
-							<option value="5:00 AM-9:00 AM">
-								5AM - 9AM
-							</option>
-							<option value="9:00 AM-12:00 PM">
-								9AM - 12PM
-							</option>
-							<option value="12:00 PM-3:00 PM">
-								12PM - 3PM
-							</option>
-							<option value="3:00 PM-6:00 PM">
-								3PM - 6PM
-							</option>
-							<option value="6:00 PM-10:00 PM">
-								6PM - 10PM
-							</option>
-						</select></span> <span class="ymca-days" id="ymca-toolbar-days"></span>
-						<div class="pretty p-switch p-fill ymca-reverse-input ymca-input-group">
-							<span class="ymca-days" id="ymca-toolbar-days"><label class="ymca-label" style="padding-bottom:15px;">Mo</label> <input class="ymca-monday ymca-checkbox" name="monday" type="checkbox"></span>
-							<div class="state p-primary">
-								<span class="ymca-days" id="ymca-toolbar-days"><label class="" for="ymca-monday"></label></span>
-							</div><span class="ymca-days" id="ymca-toolbar-days"></span>
-						</div>
-						<div class="pretty p-switch p-fill ymca-reverse-input ymca-input-group">
-							<span class="ymca-days" id="ymca-toolbar-days"><label class="ymca-label" style="padding-bottom:15px;">Tu</label> <input class="ymca-tuesday ymca-checkbox" name="tuesday" type="checkbox"></span>
-							<div class="state p-primary">
-								<span class="ymca-days" id="ymca-toolbar-days"><label class="" for="ymca-tuesday"></label></span>
-							</div><span class="ymca-days" id="ymca-toolbar-days"></span>
-						</div>
-						<div class="pretty p-switch p-fill ymca-reverse-input ymca-input-group">
-							<span class="ymca-days" id="ymca-toolbar-days"><label class="ymca-label" style="padding-bottom:15px;">We</label> <input class="ymca-wednesday ymca-checkbox" name="wednesday" type="checkbox"></span>
-							<div class="state p-primary">
-								<span class="ymca-days" id="ymca-toolbar-days"><label class="" for="ymca-wednesday"></label></span>
-							</div><span class="ymca-days" id="ymca-toolbar-days"></span>
-						</div>
-						<div class="pretty p-switch p-fill ymca-reverse-input ymca-input-group">
-							<span class="ymca-days" id="ymca-toolbar-days"><label class="ymca-label" style="padding-bottom:15px;">Th</label> <input class="ymca-thursday ymca-checkbox" name="thursday" type="checkbox"></span>
-							<div class="state p-primary">
-								<span class="ymca-days" id="ymca-toolbar-days"><label class="" for="ymca-thursday"></label></span>
-							</div><span class="ymca-days" id="ymca-toolbar-days"></span>
-						</div>
-						<div class="pretty p-switch p-fill ymca-reverse-input ymca-input-group">
-							<span class="ymca-days" id="ymca-toolbar-days"><label class="ymca-label" style="padding-bottom:15px;">Fr</label> <input class="ymca-friday ymca-checkbox" name="friday" type="checkbox"></span>
-							<div class="state p-primary">
-								<span class="ymca-days" id="ymca-toolbar-days"><label class="" for="ymca-friday"></label></span>
-							</div><span class="ymca-days" id="ymca-toolbar-days"></span>
-						</div>
-						<div class="pretty p-switch p-fill ymca-reverse-input ymca-input-group">
-							<span class="ymca-days" id="ymca-toolbar-days"><label class="ymca-label" style="padding-bottom:15px;">Sa</label> <input class="ymca-saturday ymca-checkbox" name="saturday" type="checkbox"></span>
-							<div class="state p-primary">
-								<span class="ymca-days" id="ymca-toolbar-days"><label class="" for="ymca-saturday"></label></span>
-							</div><span class="ymca-days" id="ymca-toolbar-days"></span>
-						</div>
-						<div class="pretty p-switch p-fill ymca-reverse-input ymca-input-group">
-							<span class="ymca-days" id="ymca-toolbar-days"><label class="ymca-label" style="padding-bottom:15px;">Su</label> <input class="ymca-sunday ymca-checkbox" name="sunday" type="checkbox"></span>
-							<div class="state p-primary">
-								<span class="ymca-days" id="ymca-toolbar-days"><label class="" for="ymca-sunday"></label></span>
-							</div><span class="ymca-days" id="ymca-toolbar-days"></span>
-						</div>
-						<span class="ymca-input-group ymca-filter"><label class="ymca-label">&nbsp;</label> 
-							<button aria-label="Open Filter" class="ymca-more-filters ymca-button" id="ymca-open-mobile-filters" type="button"><span class="ymca-input-group ymca-filter"><span class="ymca-input-group ymca-filter"><span class="ymca-input-group ymca-filter">Filters</span></span></span>
-							</button>
-						</span>
-						<span class="ymca-spacer"></span>
-					</form>
-				</div>
-			</div>
-		</nav>
-	</div>
 	<main class="home">
+		<header class="header">
+            <!--<h1 class="header-title"><a href="https://twitter.com/mnmllist" target="_blank">mnmllist</a></h1>
+            <h2 class="header-subtitle">listing all things minimal</h2>-->
+			<span class="" id="" style="display: flex;flex-flow: column;text-transform:uppercase;">
+				<label class="product-brand" for="ymca-zipcode">ZipCode</label>
+				
+			<input aria-label="zip" class="product-name" id="ymca-zipcode" maxlength="5" name="postal-code" placeholder="Zip Code" type="text" value="32825" style="display: flex;flex-flow: column;"></span></header>
+		
 		<div class="grid">
 			<article class="list-container" id="art-paintings">
 				<div class="list">
 					<h2 class="list-title">Parent/Child Swim - A - Water Discovery 4 Lessons</h2>
+					
 					<ol class="list-content">
 						<li class="product">
-							<p class="product-brand" style="text-transform:uppercase;">Start-End Date</p>
-							<h3 class="product-name" style="padding: 0.5rem 0;"><label class="startendtime" for="">Feb-2-2019</label> <label for="">&#10141;</label> <label class="startendtime" for="">March-12-2019</label></h3>
+							<p class="product-brand" style="text-transform:uppercase;">Start - End Date</p>
+							
+							<h3 class="product-name" style="padding: 0.5rem 0;">
+								<label class="startendtime" for="">Feb-2-2019</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">March-12-2019</label>
+							</h3>
 						</li>
 						<li class="product">
-							<p class="product-brand" style="text-transform:uppercase;">Start-End Time</p>
-							<h3 class="product-name"><label class="startendtime" for="">17:15</label> <label for="">&#10141;</label> <label class="startendtime" for="">17:45</label></h3>
+							<p class="product-brand" style="text-transform:uppercase;">Start - End Time</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">17:15</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">17:45</label>
+							</h3>
 						</li>
 						<li class="product">
 							<p class="product-brand" style="text-transform:uppercase;">Days of Week</p>
-							<h3 class="product-name"><label class="startendtime" for="">Mon</label>&nbsp; <label class="startendtime" for="">Tue</label>&nbsp; <label class="startendtime" for="">Thu</label>&nbsp; <label class="startendtime" for="">Fri</label></h3>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Mon</label>&nbsp; <label class="startendtime" for="">Tue</label>&nbsp; <label class="startendtime" for="">Thu</label>&nbsp; <label class="startendtime" for="">Fri</label>
+							</h3>
 						</li>
 						<li class="product">
 							<p class="product-brand" style="text-transform:uppercase;">Age</p>
-							<h3 class="product-name"><label class="startendtime" for="">Up to 3 years</label></h3>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Up to 3 years</label>
+							</h3>
 						</li>
 						<li class="product">
 							<p class="product-brand" style="text-transform:uppercase;">Season</p>
+							
 							<h3 class="product-name">Fall</h3>
 						</li>
 						<li class="product">
 							<p class="product-brand" style="text-transform:uppercase;">Location</p>
+							
 							<h3 class="product-name">Downtown Orlando</h3>
 						</li>
 					</ol>

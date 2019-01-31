@@ -1,5 +1,62 @@
-/** [AIV_SHORT]  Build version: 0.9.11 - Wednesday, January 30th, 2019, 2:33:43 PM  **/
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*padding: 1.5rem 1rem;*/
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+	justify-content: left;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+    
+}
 
+@media (min-width: 1000px) {
+    .header {
+        position: fixed;
+        padding: 0;
+        /*left: 1.5rem;*/
+    }
+}
+
+.header-title,
+.header-subtitle {
+    font-family: inherit;
+    line-height: 1rem
+}
+
+.header-title {
+    margin-right: 1rem
+}
+
+@media (min-width: 1000px) {
+    .header-title {
+        margin-right: 0;
+        margin-bottom: 1rem
+    }
+}
+
+.header-title a {
+    -webkit-transition-property: color;
+    transition-property: color
+}
+
+.header-title a:hover {
+    color: var(--high)
+}
+
+.header-subtitle {
+    color: var(--high);
+    cursor: default
+}
+
+
+
+/** [AIV_SHORT]  Build version: 0.9.11 - Wednesday, January 30th, 2019, 2:33:43 PM  **/
+/*
 #ymca-component #ymca-shell-snackbar .ymca-snack-bar {
 	min-width: 250px;
 	background-color: #333;
@@ -4854,3 +4911,82 @@ input::-webkit-calendar-picker-indicator {
 	transition-property: transform
 }
  
+#ymca-component .styles__secondaryButtonContainer__1XpCF {
+    margin-top: 6px;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+
+#ymca-component .styles__toggleButton__1J8Tg {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid #e8dde0;
+    color: #000;
+    cursor: pointer;
+    font-size: 13px;
+    height: 35px;
+    outline: none;
+    padding-left: 7px;
+    padding-right: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#ymca-component .styles__labelIcon__M2JSo {
+    -ms-flex: auto;
+    flex: auto;
+    margin-right: 6px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#ymca-component .styles__toggleButton__1J8Tg, #ymca-component .ymca-filter {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 2px solid #dddddd;
+    color: #000;
+    cursor: pointer;
+    font-size: 13px;
+    height: 35px;
+    outline: none;
+    padding-left: 7px;
+    padding-right: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    position: relative;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#ymca-component .styles__label__2c1LS {
+    -ms-flex: auto;
+    flex: auto;
+    margin-right: 6px;
+}
+
+*/
