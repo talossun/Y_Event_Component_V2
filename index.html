@@ -13,29 +13,60 @@
 	
 	<meta content="#000000" name="msapplication-TileColor">
 	
-	<link href="assets/filter_style.css" rel="stylesheet" />
+	<link href="assets/wp_style.css" rel="stylesheet">
 	
-	<link href="assets/main_v1_3.css" rel="stylesheet" />
-	
+	<link href="assets/main_v1_3.css" rel="stylesheet">
+	<style type="text/css">
+	       .ymca-wordpress-header {
+	top: 0;
+	left: 0;
+	height: auto;
+	padding-right: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+	background-color: #fcfcfc;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+	</style>
 	<title></title>
 </head>
 <body data-scheme="carl">
 	<main class="home">
-		<header class="header"><span class="" id="" style="display: flex;flex-flow: column;text-transform:uppercase;">
-			<label class="product-brand" for="ymca-zipcode">ZipCode</label>
-			
-			<input aria-label="zip" id="ymca-zipcode" maxlength="5" name="postal-code" placeholder="Zip Code" type="text" value="32825" style="display: flex;flex-flow: column;" />
-			</span>
-			<span class="" id="" style="display: flex;flex-flow: column;text-transform:uppercase;">
-				<label class="product-brand" for="ymca-zipcode">ZipCode</label>
+		<header class="header">
+			<div class='ymca-wordpress-header'>
+				<div class="site-logo">
+					<img src="https://ymcacentralflorida.com/web/wp-content/uploads/2018/06/ymca-logo-new-2.png">
+				</div>
 				
-				<input aria-label="zip" id="ymca-zipcode" maxlength="5" name="postal-code" placeholder="Zip Code" type="text" value="32825" style="display: flex;flex-flow: column;" />
-			</span>
-			<span class="" id="" style="display: flex;flex-flow: column;text-transform:uppercase;">
-				<label class="product-brand" for="ymca-zipcode">ZipCode</label>
+				<div id="navcontainer">
+					<ul id="navlist">
+						<li><a href="#" id="current">Programs & Classes</a></span></li>
+						<li><a href="#">Locations</a></span></li>
+						<li><a href="#">Membership</a></span></li>
+						<li><a href="#">Get Involved</a></span></li>
+						<li><a href="#">Blog & News</a></span></li>
+					</ul>
+				</div>
 				
-				<input aria-label="zip" id="ymca-zipcode" maxlength="5" name="postal-code" placeholder="Zip Code" type="text" value="32825" style="display: flex;flex-flow: column;" />
-			</span></header>
+				<button class="ymca-cart-button ymca-button" id="ymca-cart-button" type="button">
+					<svg height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path>
+						
+						<path d="M0 0h24v24H0z" fill="none"></path>
+					</svg>
+							<span class='ymca-cart-counter'></span>
+						
+					<span id='ymca-component-build-number' style='color:white;'></span>
+					<span class='ymca-spacer'></span></button>
+			</div>
+		</header>
 		
 		<div class="grid">
 			<article class="list-container" id="art-paintings">
@@ -89,13 +120,12 @@
 							<h3 class="product-name">$90.00 / $175.00</h3>
 						</li>
 						<li class="product">
-							<p class="product-brand">Location</p>
+							<p class="product-brand">Location</p><a href="https://goo.gl/maps/9yGj8CpCwtk" style="text-decoration:underline;" target="_blank">
+								<h3 class="product-name">Downtown Orlando</h3>
+						</a></li>
+						<li class="product" style="text-align: right;"><i></i>
 							
-							<a style="text-decoration:underline;" target="_blank" href="https://goo.gl/maps/9yGj8CpCwtk"><h3 class="product-name">Downtown Orlando</h3></a>
-						</li>
-						<li class="product" style="text-align: right;"><i>
-							<p class="product-brand">Only 8 slots left</p>
-							</i>
+							<p class="product-brand"><i>Only 8 slots left</i></p>
 							
 							<h3 class="product-name">
 								<button class="add-to-cart-cta">Add to Cart</button>
@@ -156,13 +186,207 @@
 							<h3 class="product-name">$80.00 / $155.00</h3>
 						</li>
 						<li class="product">
-							<p class="product-brand">Location</p>
+							<p class="product-brand">Location</p><a href="https://goo.gl/maps/TyR4xvSYvd22" style="text-decoration:underline;" target="_blank">
+								<h3 class="product-name">Winter Park</h3>
+						</a></li>
+						<li class="product" style="text-align: right;"><i></i>
 							
-							<a style="text-decoration:underline;" target="_blank" href="https://goo.gl/maps/TyR4xvSYvd22"><h3 class="product-name">Winter Park</h3></a>
+							<p class="product-brand"><i>15% member early bird discount</i></p>
+							
+							<h3 class="product-name">
+								<button class="add-to-cart-cta">Add to Cart</button>
+							</h3>
 						</li>
-						<li class="product" style="text-align: right;"><i>
-							<p class="product-brand">15% member early bird discount</p>
-							</i>
+					</ol>
+				</div>
+			</article>
+			<article class="list-container" id="art-paintings">
+				<div class="list">
+					<h2 class="list-title">Parent/Child Swim - A - Water Discovery 4 Lessons</h2>
+					
+					<ol class="list-content">
+						<li class="product">
+							<p class="product-brand">Start - End Date</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Feb-2-2019</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">March-12-2019</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Start - End Time</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">17:15</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">17:45</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Days of Week</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Mon</label>&nbsp; <label class="startendtime" for="">Tue</label>&nbsp; <label class="startendtime" for="">Thu</label>&nbsp; <label class="startendtime" for="">Fri</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Age</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">6 months</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">1 year</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Member / Non-Member</p>
+							
+							<h3 class="product-name">$90.00 / $175.00</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Location</p><a href="https://goo.gl/maps/9yGj8CpCwtk" style="text-decoration:underline;" target="_blank">
+								<h3 class="product-name">Downtown Orlando</h3>
+						</a></li>
+						<li class="product" style="text-align: right;"><i></i>
+							
+							<p class="product-brand"><i>Only 8 slots left</i></p>
+							
+							<h3 class="product-name">
+								<button class="add-to-cart-cta">Add to Cart</button>
+							</h3>
+						</li>
+					</ol>
+				</div>
+			</article>
+			<article class="list-container" id="art-paintings">
+				<div class="list">
+					<h2 class="list-title">Parent/Child Swim - A - Water Discovery 4 Lessons</h2>
+					
+					<ol class="list-content">
+						<li class="product">
+							<p class="product-brand">Start - End Date</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Feb-2-2019</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">March-12-2019</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Start - End Time</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">17:15</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">17:45</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Days of Week</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Mon</label>&nbsp; <label class="startendtime" for="">Tue</label>&nbsp; <label class="startendtime" for="">Thu</label>&nbsp; <label class="startendtime" for="">Fri</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Age</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">6 months</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">1 year</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Member / Non-Member</p>
+							
+							<h3 class="product-name">$90.00 / $175.00</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Location</p><a href="https://goo.gl/maps/9yGj8CpCwtk" style="text-decoration:underline;" target="_blank">
+								<h3 class="product-name">Downtown Orlando</h3>
+						</a></li>
+						<li class="product" style="text-align: right;"><i></i>
+							
+							<p class="product-brand"><i>Only 8 slots left</i></p>
+							
+							<h3 class="product-name">
+								<button class="add-to-cart-cta">Add to Cart</button>
+							</h3>
+						</li>
+					</ol>
+				</div>
+			</article>
+			<article class="list-container" id="art-paintings">
+				<div class="list">
+					<h2 class="list-title">Parent/Child Swim - A - Water Discovery 4 Lessons</h2>
+					
+					<ol class="list-content">
+						<li class="product">
+							<p class="product-brand">Start - End Date</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Feb-2-2019</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">March-12-2019</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Start - End Time</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">17:15</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">17:45</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Days of Week</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">Mon</label>&nbsp; <label class="startendtime" for="">Tue</label>&nbsp; <label class="startendtime" for="">Thu</label>&nbsp; <label class="startendtime" for="">Fri</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Age</p>
+							
+							<h3 class="product-name">
+								<label class="startendtime" for="">6 months</label>
+								
+								<label for="">&#10141;</label>
+								
+								<label class="startendtime" for="">1 year</label>
+							</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Member / Non-Member</p>
+							
+							<h3 class="product-name">$90.00 / $175.00</h3>
+						</li>
+						<li class="product">
+							<p class="product-brand">Location</p><a href="https://goo.gl/maps/9yGj8CpCwtk" style="text-decoration:underline;" target="_blank">
+								<h3 class="product-name">Downtown Orlando</h3>
+						</a></li>
+						<li class="product" style="text-align: right;"><i></i>
+							
+							<p class="product-brand"><i>Only 8 slots left</i></p>
 							
 							<h3 class="product-name">
 								<button class="add-to-cart-cta">Add to Cart</button>
@@ -173,7 +397,5 @@
 			</article>
 		</div>
 	</main>
-	<script src="assets/app_v1.js">
-	</script>
 </body>
 </html>
