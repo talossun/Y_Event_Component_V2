@@ -213,9 +213,9 @@ body * {
 	}
 }
 
-.list-container:not(:last-child) {
+/*.list-container:not(:last-child) {
 	margin-bottom: 1rem
-}
+}*/
 
 @media (min-width: 550px) {
 	.list-container:not(: last-child) {
@@ -240,7 +240,7 @@ div.list {
 
 @media (min-width: 450px) {
 	div.list {
-		padding: 0 2rem 1rem
+		padding: 0 2rem 0.5rem
 	}
 }
 
@@ -428,7 +428,6 @@ main.list .list-container {
 	padding-top: .25rem;
 	padding-bottom: .25rem
 }
-
 .startendtime {
 	font-size: .6464646465rem;
 	background-color: rgba(0, 0, 0, 0.05);
@@ -436,11 +435,8 @@ main.list .list-container {
 	padding: 0.3rem;
 	margin: 0.3rem 0;
 }
-.add-to-cart-div {
+.add-to-cart-cta {
 	padding: 0.25rem;
-	text-align: right;
-}
-.add-to-cart-div .add-to-cart {
 	border-radius: 0.15rem;
 	padding: 0.25rem;
 	font-size: .6464646465rem;
@@ -450,13 +446,7 @@ main.list .list-container {
 	border-color: #01a490;
 	color: #ffffff;
 }
-
-.add-to-cart-div .add-to-cart:hover {
+.add-to-cart-cta:hover {
 	background-color: #20bdbe;
 	border-color: #20bdbe;
-}
-.CTA-message {
-	font-size: .6464646465rem;
-	font-weight: 300;
-	font-style: italic;
 }
