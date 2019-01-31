@@ -1,0 +1,4856 @@
+/** [AIV_SHORT]  Build version: 0.9.11 - Wednesday, January 30th, 2019, 2:33:43 PM  **/
+
+#ymca-component #ymca-shell-snackbar .ymca-snack-bar {
+	min-width: 250px;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	padding: 16px;
+	position: fixed;
+	z-index: 500;
+	left: 30px;
+	bottom: 30px
+}
+
+#ymca-component #ymca-shell-snackbar .ymca-show {
+	display: block;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s
+}
+
+#ymca-component #ymca-shell-snackbar .ymca-hidden {
+	display: none;
+	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+	animation: fadein 0.5s, fadeout 0.5s 2.5s
+}@-webkit-keyframes fadein {
+from {
+	bottom: 0;
+	opacity: 0
+}
+
+to {
+	bottom: 30px;
+	opacity: 1
+}
+}@keyframes fadein {
+from {
+	bottom: 0;
+	opacity: 0
+}
+
+to {
+	bottom: 30px;
+	opacity: 1
+}
+}@-webkit-keyframes fadeout {
+from {
+	bottom: 30px;
+	opacity: 1
+}
+
+to {
+	bottom: 0;
+	opacity: 0
+}
+}@keyframes fadeout {
+from {
+	bottom: 30px;
+	opacity: 1
+}
+
+to {
+	bottom: 0;
+	opacity: 0
+}
+}
+#ymca-component div, #ymca-component span, #ymca-component applet, #ymca-component object, #ymca-component iframe, #ymca-component h1, #ymca-component h2, #ymca-component h3, #ymca-component h4, #ymca-component h5, #ymca-component h6, #ymca-component p, #ymca-component blockquote, #ymca-component pre, #ymca-component a, #ymca-component abbr, #ymca-component acronym, #ymca-component address, #ymca-component big, #ymca-component cite, #ymca-component code, #ymca-component del, #ymca-component dfn, #ymca-component em, #ymca-component img, #ymca-component ins, #ymca-component kbd, #ymca-component q, #ymca-component s, #ymca-component samp, #ymca-component small, #ymca-component strike, #ymca-component strong, #ymca-component sub, #ymca-component sup, #ymca-component tt, #ymca-component var, #ymca-component b, #ymca-component u, #ymca-component i, #ymca-component center, #ymca-component dl, #ymca-component dt, #ymca-component dd, #ymca-component ol, #ymca-component ul, #ymca-component li, #ymca-component fieldset, #ymca-component form, #ymca-component label, #ymca-component legend, #ymca-component table, #ymca-component caption, #ymca-component tbody, #ymca-component tfoot, #ymca-component thead, #ymca-component tr, #ymca-component th, #ymca-component td, #ymca-component article, #ymca-component aside, #ymca-component canvas, #ymca-component details, #ymca-component embed, #ymca-component figure, #ymca-component figcaption, #ymca-component footer, #ymca-component header, #ymca-component hgroup, #ymca-component menu, #ymca-component nav, #ymca-component output, #ymca-component ruby, #ymca-component section, #ymca-component summary, #ymca-component time, #ymca-component mark, #ymca-component audio, #ymca-component video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+
+#ymca-component article, #ymca-component aside, #ymca-component details, #ymca-component figcaption, #ymca-component figure, #ymca-component footer, #ymca-component header, #ymca-component hgroup, #ymca-component menu, #ymca-component nav, #ymca-component section {
+	display: block
+}
+
+#ymca-component body {
+	line-height: 1
+}
+
+#ymca-component ol, #ymca-component ul {
+	list-style: none
+}
+
+#ymca-component blockquote, #ymca-component q {
+	quotes: none
+}
+
+#ymca-component blockquote:before, #ymca-component blockquote:after, #ymca-component q:before, #ymca-component q:after {
+	content: '';
+	content: none
+}
+
+#ymca-component table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+.ymca-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #0060af;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #0060af;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #0060af;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #0060af;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #0060af;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px
+}
+
+.ymca-divider {
+	border-top: 1px solid #8c8b8b
+}
+
+.ymca-icon svg {
+	padding: 8px 0
+}
+
+.ymca-input {
+	background-clip: padding-box;
+	background-color: #fff;
+	border-bottom-color: #ced4da;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #ced4da;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #ced4da;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #ced4da;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+	-moz-box-flex: 1
+}
+
+.ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+.ymca-link-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+.ymca-link-redirect {
+	text-decoration: none;
+	color: #0060af
+}
+
+.ymca-select {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-origin: padding-box;
+	background-position: calc(-12px + 100%) 50%;
+	background-position-x: calc(-12px + 100%);
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: 8px 10px;
+	border-bottom-color: #80bdff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #80bdff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #80bdff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #80bdff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 16px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 28px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	text-transform: none;
+	transition-delay: 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s;
+	transition-property: background-color, border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+	-moz-appearance: none
+}
+
+.ymca-input-group {
+	display: flex;
+	flex-flow: column
+}
+
+.ymca-input-group--label {
+	font-size: 12px
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100
+}
+
+.pretty * {
+	box-sizing: border-box
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+	display: none
+}
+
+.pretty {
+	position: relative;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.pretty input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.pretty .state label {
+	position: initial;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 1.5em;
+	min-width: calc(1em + 2px)
+}
+
+.pretty .state label:before, .pretty .state label:after {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid transparent;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty .state label:before {
+	border-color: #bdc3c7
+}
+
+.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+	display: none
+}
+
+.pretty.p-switch input {
+	min-width: 2em
+}
+
+.pretty.p-switch .state {
+	position: relative
+}
+
+.pretty.p-switch .state:before {
+	content: '';
+	border: 1px solid #bdc3c7;
+	border-radius: 60px;
+	width: 2em;
+	box-sizing: unset;
+	height: calc(1em + 2px);
+	position: absolute;
+	top: 0;
+	top: calc((0% - (100% - 1em)) - 16%);
+	z-index: 0;
+	transition: all 0.5s ease
+}
+
+.pretty.p-switch .state label {
+	text-indent: 2.5em
+}
+
+.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+	transition: all 0.5s ease;
+	border-radius: 100%;
+	left: 0;
+	border-color: transparent;
+	transform: scale(0.8)
+}
+
+.pretty.p-switch .state label:after {
+	background-color: #bdc3c7 !important
+}
+
+.pretty.p-switch input:checked ~ .state:before {
+	border-color: #5a656b
+}
+
+.pretty.p-switch input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch input:checked ~ .state label:after {
+	background-color: #5a656b !important;
+	left: 1em
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+	border-color: #5a656b;
+	background-color: #5a656b !important
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:after {
+	background-color: #fff !important;
+	left: 1em
+}
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+	background-color: #428bca !important
+}
+
+.pretty input:checked ~ .state.p-primary .icon, .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
+	border-color: #428bca
+}
+
+.pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-primary-o .icon, .pretty input:checked ~ .state.p-primary-o .svg, .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon, .pretty.p-toggle .state.p-primary-o .svg, .pretty.p-toggle .state.p-primary-o svg {
+	color: #428bca;
+	stroke: #428bca
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-primary:before {
+	border-color: #428bca
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
+	border-color: #245682;
+	background-color: #245682 !important
+}
+
+.pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty input:checked ~ .state.p-info .icon, .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon, .pretty.p-toggle .state.p-info .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
+	border-color: #5bc0de
+}
+
+.pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-info-o .icon, .pretty input:checked ~ .state.p-info-o .svg, .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon, .pretty.p-toggle .state.p-info-o .svg, .pretty.p-toggle .state.p-info-o svg {
+	color: #5bc0de;
+	stroke: #5bc0de
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-info:before {
+	border-color: #5bc0de
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
+	border-color: #2390b0;
+	background-color: #2390b0 !important
+}
+
+.pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
+	border-color: #5cb85c
+}
+
+.pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-success-o .icon, .pretty input:checked ~ .state.p-success-o .svg, .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon, .pretty.p-toggle .state.p-success-o .svg, .pretty.p-toggle .state.p-success-o svg {
+	color: #5cb85c;
+	stroke: #5cb85c
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-success:before {
+	border-color: #5cb85c
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
+	border-color: #357935;
+	background-color: #357935 !important
+}
+
+.pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty input:checked ~ .state.p-warning .icon, .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon, .pretty.p-toggle .state.p-warning .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+	border-color: #f0ad4e
+}
+
+.pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-warning-o .icon, .pretty input:checked ~ .state.p-warning-o .svg, .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon, .pretty.p-toggle .state.p-warning-o .svg, .pretty.p-toggle .state.p-warning-o svg {
+	color: #f0ad4e;
+	stroke: #f0ad4e
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-warning:before {
+	border-color: #f0ad4e
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
+	border-color: #c77c11;
+	background-color: #c77c11 !important
+}
+
+.pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
+	background-color: #d9534f !important
+}
+
+.pretty input:checked ~ .state.p-danger .icon, .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon, .pretty.p-toggle .state.p-danger .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
+	border-color: #d9534f
+}
+
+.pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-danger-o .icon, .pretty input:checked ~ .state.p-danger-o .svg, .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon, .pretty.p-toggle .state.p-danger-o .svg, .pretty.p-toggle .state.p-danger-o svg {
+	color: #d9534f;
+	stroke: #d9534f
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-danger:before {
+	border-color: #d9534f
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
+	border-color: #a02622;
+	background-color: #a02622 !important
+}
+
+.ymca-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #0060af;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #0060af;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #0060af;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #0060af;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #0060af;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px
+}
+
+.ymca-divider {
+	border-top: 1px solid #8c8b8b
+}
+
+.ymca-icon svg {
+	padding: 8px 0
+}
+
+.ymca-input {
+	background-clip: padding-box;
+	background-color: #fff;
+	border-bottom-color: #ced4da;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #ced4da;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #ced4da;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #ced4da;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+	-moz-box-flex: 1
+}
+
+.ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+.ymca-link-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+.ymca-link-redirect {
+	text-decoration: none;
+	color: #0060af
+}
+
+.ymca-select {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-origin: padding-box;
+	background-position: calc(-12px + 100%) 50%;
+	background-position-x: calc(-12px + 100%);
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: 8px 10px;
+	border-bottom-color: #80bdff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #80bdff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #80bdff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #80bdff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 16px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 28px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	text-transform: none;
+	transition-delay: 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s;
+	transition-property: background-color, border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+	-moz-appearance: none
+}
+
+.ymca-input-group {
+	display: flex;
+	flex-flow: column
+}
+
+.ymca-input-group--label {
+	font-size: 12px
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100
+}
+
+.pretty * {
+	box-sizing: border-box
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+	display: none
+}
+
+.pretty {
+	position: relative;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.pretty input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.pretty .state label {
+	position: initial;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 1.5em;
+	min-width: calc(1em + 2px)
+}
+
+.pretty .state label:before, .pretty .state label:after {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid transparent;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty .state label:before {
+	border-color: #bdc3c7
+}
+
+.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+	display: none
+}
+
+.pretty.p-switch input {
+	min-width: 2em
+}
+
+.pretty.p-switch .state {
+	position: relative
+}
+
+.pretty.p-switch .state:before {
+	content: '';
+	border: 1px solid #bdc3c7;
+	border-radius: 60px;
+	width: 2em;
+	box-sizing: unset;
+	height: calc(1em + 2px);
+	position: absolute;
+	top: 0;
+	top: calc((0% - (100% - 1em)) - 16%);
+	z-index: 0;
+	transition: all 0.5s ease
+}
+
+.pretty.p-switch .state label {
+	text-indent: 2.5em
+}
+
+.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+	transition: all 0.5s ease;
+	border-radius: 100%;
+	left: 0;
+	border-color: transparent;
+	transform: scale(0.8)
+}
+
+.pretty.p-switch .state label:after {
+	background-color: #bdc3c7 !important
+}
+
+.pretty.p-switch input:checked ~ .state:before {
+	border-color: #5a656b
+}
+
+.pretty.p-switch input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch input:checked ~ .state label:after {
+	background-color: #5a656b !important;
+	left: 1em
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+	border-color: #5a656b;
+	background-color: #5a656b !important
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:after {
+	background-color: #fff !important;
+	left: 1em
+}
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+	background-color: #428bca !important
+}
+
+.pretty input:checked ~ .state.p-primary .icon, .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
+	border-color: #428bca
+}
+
+.pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-primary-o .icon, .pretty input:checked ~ .state.p-primary-o .svg, .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon, .pretty.p-toggle .state.p-primary-o .svg, .pretty.p-toggle .state.p-primary-o svg {
+	color: #428bca;
+	stroke: #428bca
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-primary:before {
+	border-color: #428bca
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
+	border-color: #245682;
+	background-color: #245682 !important
+}
+
+.pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty input:checked ~ .state.p-info .icon, .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon, .pretty.p-toggle .state.p-info .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
+	border-color: #5bc0de
+}
+
+.pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-info-o .icon, .pretty input:checked ~ .state.p-info-o .svg, .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon, .pretty.p-toggle .state.p-info-o .svg, .pretty.p-toggle .state.p-info-o svg {
+	color: #5bc0de;
+	stroke: #5bc0de
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-info:before {
+	border-color: #5bc0de
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
+	border-color: #2390b0;
+	background-color: #2390b0 !important
+}
+
+.pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
+	border-color: #5cb85c
+}
+
+.pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-success-o .icon, .pretty input:checked ~ .state.p-success-o .svg, .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon, .pretty.p-toggle .state.p-success-o .svg, .pretty.p-toggle .state.p-success-o svg {
+	color: #5cb85c;
+	stroke: #5cb85c
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-success:before {
+	border-color: #5cb85c
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
+	border-color: #357935;
+	background-color: #357935 !important
+}
+
+.pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty input:checked ~ .state.p-warning .icon, .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon, .pretty.p-toggle .state.p-warning .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+	border-color: #f0ad4e
+}
+
+.pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-warning-o .icon, .pretty input:checked ~ .state.p-warning-o .svg, .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon, .pretty.p-toggle .state.p-warning-o .svg, .pretty.p-toggle .state.p-warning-o svg {
+	color: #f0ad4e;
+	stroke: #f0ad4e
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-warning:before {
+	border-color: #f0ad4e
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
+	border-color: #c77c11;
+	background-color: #c77c11 !important
+}
+
+.pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
+	background-color: #d9534f !important
+}
+
+.pretty input:checked ~ .state.p-danger .icon, .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon, .pretty.p-toggle .state.p-danger .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
+	border-color: #d9534f
+}
+
+.pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-danger-o .icon, .pretty input:checked ~ .state.p-danger-o .svg, .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon, .pretty.p-toggle .state.p-danger-o .svg, .pretty.p-toggle .state.p-danger-o svg {
+	color: #d9534f;
+	stroke: #d9534f
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-danger:before {
+	border-color: #d9534f
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
+	border-color: #a02622;
+	background-color: #a02622 !important
+}
+
+#ymca-component #ymca-shell-toolbar {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 66px;
+	z-index: 99999;
+	left: 0;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+	min-width: 100%
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-dev-tools {
+	font-family: Verdana;
+	background-color: #0060af;
+	top: 65px;
+	left: 0;
+	height: 60px;
+	padding-right: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	position: absolute;
+	width: 100%;
+	z-index: 200;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3);
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar {
+	font-family: Verdana;
+	background-color: #ffffff;
+	height: 70px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	left: 0;
+	width: 100%;
+	z-index: 200;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.3)
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-reverse-input {
+	display: flex !important;
+	flex-flow: column !important;
+	text-align: left !important;
+	padding-left: 10px;
+	padding-right: 10px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-form {
+	align-items: center;
+	display: flex;
+	flex-flow: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-days {
+	display: flex;
+	flex-flow: row
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-day {
+	display: flex;
+	flex-flow: column
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-label {
+	margin-left: 5px;
+	margin-right: 5px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-select {
+	font-size: 16px;
+	height: 35px;
+	line-height: 16px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-input {
+	line-height: 21px;
+	margin-left: 5px;
+	margin-right: 5px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-filter {
+	display: none
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-input {
+	width: 150px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-select {
+	width: 170px;
+	margin-left: 5px;
+	margin-right: 5px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-dummy-cart {
+	margin-right: 15px;
+	float: right
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-button>svg {
+	height: 26px;
+	border: 0
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolnav {
+	min-height: 0;
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-top: 0px;
+	transition: 0.5s;
+	background-color: white;
+	box-shadow: rgba(0,0,0,0.2) 0px 2px 1px -1px,rgba(0,0,0,0.14) 0px 1px 1px 0px,rgba(0,0,0,0.12) 0px 1px 3px 0px;
+	text-align: center
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolnav .ymca-form {
+	text-align: left;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-left: 10px;
+	margin-right: 10px;
+	overflow: scroll
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolnav .ymca-label {
+	padding-bottom: 2px
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolnav .ymca-close-button {
+	float: left
+}
+
+#ymca-component #ymca-shell-toolbar .ymca-toolnav .ymca-toolnav-days {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around
+}
+
+@media only screen and (max-width: 1000px) {
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-ages {
+		display: none
+	}
+	
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-days {
+		display: none
+	}
+	
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-times {
+		display: none
+	}
+	
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-tag {
+		display: none
+	}
+	
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-spacer {
+		display: none
+	}
+	
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-filter {
+		display: flex
+	}
+	
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-input {
+		width: 100px
+	}
+	
+	#ymca-component #ymca-shell-toolbar .ymca-toolbar .ymca-more-filters {
+		margin-right: 15px
+	}
+}
+#ymca-component #ymca-shell-events .ymca-events {
+	display: flex;
+	justify-content: center;
+	flex-flow: row;
+	flex-wrap: wrap;
+	min-height: 50vh;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+	min-width: 100%
+}
+
+#ymca-component .ymca-spinner {
+	border: 16px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 16px solid #006b6b;
+	border-right: 16px solid #00aeef;
+	border-bottom: 16px solid #5c2e91;
+	border-left: 16px solid #ed1c24;
+	width: 60px;
+	height: 60px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+	margin: auto;
+	display: none
+}@-webkit-keyframes spin {
+0% {
+	-webkit-transform: rotate(0deg)
+}
+
+100% {
+	-webkit-transform: rotate(360deg)
+}
+}@keyframes spin {
+0% {
+	transform: rotate(0deg)
+}
+
+100% {
+	transform: rotate(360deg)
+}
+}
+.ymca-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #0060af;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #0060af;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #0060af;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #0060af;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #0060af;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px
+}
+
+.ymca-divider {
+	border-top: 1px solid #8c8b8b
+}
+
+.ymca-icon svg {
+	padding: 8px 0
+}
+
+.ymca-input {
+	background-clip: padding-box;
+	background-color: #fff;
+	border-bottom-color: #ced4da;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #ced4da;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #ced4da;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #ced4da;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+	-moz-box-flex: 1
+}
+
+.ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+.ymca-link-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+.ymca-link-redirect {
+	text-decoration: none;
+	color: #0060af
+}
+
+.ymca-select {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-origin: padding-box;
+	background-position: calc(-12px + 100%) 50%;
+	background-position-x: calc(-12px + 100%);
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: 8px 10px;
+	border-bottom-color: #80bdff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #80bdff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #80bdff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #80bdff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 16px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 28px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	text-transform: none;
+	transition-delay: 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s;
+	transition-property: background-color, border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+	-moz-appearance: none
+}
+
+.ymca-input-group {
+	display: flex;
+	flex-flow: column
+}
+
+.ymca-input-group--label {
+	font-size: 12px
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100
+}
+
+.pretty * {
+	box-sizing: border-box
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+	display: none
+}
+
+.pretty {
+	position: relative;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.pretty input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.pretty .state label {
+	position: initial;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 1.5em;
+	min-width: calc(1em + 2px)
+}
+
+.pretty .state label:before, .pretty .state label:after {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid transparent;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty .state label:before {
+	border-color: #bdc3c7
+}
+
+.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+	display: none
+}
+
+.pretty.p-switch input {
+	min-width: 2em
+}
+
+.pretty.p-switch .state {
+	position: relative
+}
+
+.pretty.p-switch .state:before {
+	content: '';
+	border: 1px solid #bdc3c7;
+	border-radius: 60px;
+	width: 2em;
+	box-sizing: unset;
+	height: calc(1em + 2px);
+	position: absolute;
+	top: 0;
+	top: calc((0% - (100% - 1em)) - 16%);
+	z-index: 0;
+	transition: all 0.5s ease
+}
+
+.pretty.p-switch .state label {
+	text-indent: 2.5em
+}
+
+.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+	transition: all 0.5s ease;
+	border-radius: 100%;
+	left: 0;
+	border-color: transparent;
+	transform: scale(0.8)
+}
+
+.pretty.p-switch .state label:after {
+	background-color: #bdc3c7 !important
+}
+
+.pretty.p-switch input:checked ~ .state:before {
+	border-color: #5a656b
+}
+
+.pretty.p-switch input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch input:checked ~ .state label:after {
+	background-color: #5a656b !important;
+	left: 1em
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+	border-color: #5a656b;
+	background-color: #5a656b !important
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:after {
+	background-color: #fff !important;
+	left: 1em
+}
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+	background-color: #428bca !important
+}
+
+.pretty input:checked ~ .state.p-primary .icon, .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
+	border-color: #428bca
+}
+
+.pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-primary-o .icon, .pretty input:checked ~ .state.p-primary-o .svg, .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon, .pretty.p-toggle .state.p-primary-o .svg, .pretty.p-toggle .state.p-primary-o svg {
+	color: #428bca;
+	stroke: #428bca
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-primary:before {
+	border-color: #428bca
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
+	border-color: #245682;
+	background-color: #245682 !important
+}
+
+.pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty input:checked ~ .state.p-info .icon, .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon, .pretty.p-toggle .state.p-info .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
+	border-color: #5bc0de
+}
+
+.pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-info-o .icon, .pretty input:checked ~ .state.p-info-o .svg, .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon, .pretty.p-toggle .state.p-info-o .svg, .pretty.p-toggle .state.p-info-o svg {
+	color: #5bc0de;
+	stroke: #5bc0de
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-info:before {
+	border-color: #5bc0de
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
+	border-color: #2390b0;
+	background-color: #2390b0 !important
+}
+
+.pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
+	border-color: #5cb85c
+}
+
+.pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-success-o .icon, .pretty input:checked ~ .state.p-success-o .svg, .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon, .pretty.p-toggle .state.p-success-o .svg, .pretty.p-toggle .state.p-success-o svg {
+	color: #5cb85c;
+	stroke: #5cb85c
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-success:before {
+	border-color: #5cb85c
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
+	border-color: #357935;
+	background-color: #357935 !important
+}
+
+.pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty input:checked ~ .state.p-warning .icon, .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon, .pretty.p-toggle .state.p-warning .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+	border-color: #f0ad4e
+}
+
+.pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-warning-o .icon, .pretty input:checked ~ .state.p-warning-o .svg, .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon, .pretty.p-toggle .state.p-warning-o .svg, .pretty.p-toggle .state.p-warning-o svg {
+	color: #f0ad4e;
+	stroke: #f0ad4e
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-warning:before {
+	border-color: #f0ad4e
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
+	border-color: #c77c11;
+	background-color: #c77c11 !important
+}
+
+.pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
+	background-color: #d9534f !important
+}
+
+.pretty input:checked ~ .state.p-danger .icon, .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon, .pretty.p-toggle .state.p-danger .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
+	border-color: #d9534f
+}
+
+.pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-danger-o .icon, .pretty input:checked ~ .state.p-danger-o .svg, .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon, .pretty.p-toggle .state.p-danger-o .svg, .pretty.p-toggle .state.p-danger-o svg {
+	color: #d9534f;
+	stroke: #d9534f
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-danger:before {
+	border-color: #d9534f
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
+	border-color: #a02622;
+	background-color: #a02622 !important
+}
+
+#ymca-component {
+	font-family: Verdana;
+	font-size: 16px;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0
+}
+
+#ymca-component .ymca-shell-events {
+	padding-top: 60px;
+	width: 100%
+}
+
+#ymca-component .ymca-shell-quick-cart {
+	display: inline-block;
+	white-space: nowrap
+}
+
+#ymca-component .ymca-spacer {
+	flex-grow: 1
+}
+
+#ymca-component .ymca-progress-bar {
+	position: relative;
+	height: 4px;
+	display: block;
+	width: 100%;
+	background-color: #acece6;
+	border-radius: 2px;
+	background-clip: padding-box;
+	margin: 0;
+	overflow: hidden;
+	visibility: hidden
+}
+
+#ymca-component .ymca-progress-bar .ymca-determinate {
+	position: absolute;
+	background-color: inherit;
+	top: 0;
+	bottom: 0;
+	background-color: #ff4081;
+	transition: width .3s linear
+}
+
+#ymca-component .ymca-progress-bar .ymca-indeterminate {
+	background-color: #ff4081
+}
+
+#ymca-component .ymca-progress-bar .ymca-indeterminate:before {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	will-change: left, right;
+	-webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+	animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite
+}
+
+#ymca-component .ymca-progress-bar .ymca-indeterminate:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	will-change: left, right;
+	-webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+	animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+	-webkit-animation-delay: 1.15s;
+	animation-delay: 1.15s
+}@-webkit-keyframes ymca-indeterminate {
+0% {
+	left: -35%;
+	right: 100%
+}
+
+60% {
+	left: 100%;
+	right: -90%
+}
+
+100% {
+	left: 100%;
+	right: -90%
+}
+}@keyframes indeterminate {
+0% {
+	left: -35%;
+	right: 100%
+}
+
+60% {
+	left: 100%;
+	right: -90%
+}
+
+100% {
+	left: 100%;
+	right: -90%
+}
+}@-webkit-keyframes indeterminate-short {
+0% {
+	left: -200%;
+	right: 100%
+}
+
+60% {
+	left: 107%;
+	right: -8%
+}
+
+100% {
+	left: 107%;
+	right: -8%
+}
+}@keyframes indeterminate-short {
+0% {
+	left: -200%;
+	right: 100%
+}
+
+60% {
+	left: 107%;
+	right: -8%
+}
+
+100% {
+	left: 107%;
+	right: -8%
+}
+}
+#ymca-component .ymca-nav-to-top {
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	background-color: #fff;
+	border-color: #0060af
+}
+
+#ymca-component .ymca-nav-to-top:hover {
+	transform: scale(1.05);
+	background-color: #0060af
+}
+
+.ymca-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #0060af;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #0060af;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #0060af;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #0060af;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #0060af;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px
+}
+
+.ymca-divider {
+	border-top: 1px solid #8c8b8b
+}
+
+.ymca-icon svg {
+	padding: 8px 0
+}
+
+.ymca-input {
+	background-clip: padding-box;
+	background-color: #fff;
+	border-bottom-color: #ced4da;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #ced4da;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #ced4da;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #ced4da;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+	-moz-box-flex: 1
+}
+
+.ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+.ymca-link-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+.ymca-link-redirect {
+	text-decoration: none;
+	color: #0060af
+}
+
+.ymca-select {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-origin: padding-box;
+	background-position: calc(-12px + 100%) 50%;
+	background-position-x: calc(-12px + 100%);
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: 8px 10px;
+	border-bottom-color: #80bdff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #80bdff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #80bdff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #80bdff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 16px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 28px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	text-transform: none;
+	transition-delay: 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s;
+	transition-property: background-color, border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+	-moz-appearance: none
+}
+
+.ymca-input-group {
+	display: flex;
+	flex-flow: column
+}
+
+.ymca-input-group--label {
+	font-size: 12px
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100
+}
+
+.pretty * {
+	box-sizing: border-box
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+	display: none
+}
+
+.pretty {
+	position: relative;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.pretty input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.pretty .state label {
+	position: initial;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 1.5em;
+	min-width: calc(1em + 2px)
+}
+
+.pretty .state label:before, .pretty .state label:after {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid transparent;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty .state label:before {
+	border-color: #bdc3c7
+}
+
+.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+	display: none
+}
+
+.pretty.p-switch input {
+	min-width: 2em
+}
+
+.pretty.p-switch .state {
+	position: relative
+}
+
+.pretty.p-switch .state:before {
+	content: '';
+	border: 1px solid #bdc3c7;
+	border-radius: 60px;
+	width: 2em;
+	box-sizing: unset;
+	height: calc(1em + 2px);
+	position: absolute;
+	top: 0;
+	top: calc((0% - (100% - 1em)) - 16%);
+	z-index: 0;
+	transition: all 0.5s ease
+}
+
+.pretty.p-switch .state label {
+	text-indent: 2.5em
+}
+
+.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+	transition: all 0.5s ease;
+	border-radius: 100%;
+	left: 0;
+	border-color: transparent;
+	transform: scale(0.8)
+}
+
+.pretty.p-switch .state label:after {
+	background-color: #bdc3c7 !important
+}
+
+.pretty.p-switch input:checked ~ .state:before {
+	border-color: #5a656b
+}
+
+.pretty.p-switch input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch input:checked ~ .state label:after {
+	background-color: #5a656b !important;
+	left: 1em
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+	border-color: #5a656b;
+	background-color: #5a656b !important
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:after {
+	background-color: #fff !important;
+	left: 1em
+}
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+	background-color: #428bca !important
+}
+
+.pretty input:checked ~ .state.p-primary .icon, .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
+	border-color: #428bca
+}
+
+.pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-primary-o .icon, .pretty input:checked ~ .state.p-primary-o .svg, .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon, .pretty.p-toggle .state.p-primary-o .svg, .pretty.p-toggle .state.p-primary-o svg {
+	color: #428bca;
+	stroke: #428bca
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-primary:before {
+	border-color: #428bca
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
+	border-color: #245682;
+	background-color: #245682 !important
+}
+
+.pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty input:checked ~ .state.p-info .icon, .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon, .pretty.p-toggle .state.p-info .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
+	border-color: #5bc0de
+}
+
+.pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-info-o .icon, .pretty input:checked ~ .state.p-info-o .svg, .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon, .pretty.p-toggle .state.p-info-o .svg, .pretty.p-toggle .state.p-info-o svg {
+	color: #5bc0de;
+	stroke: #5bc0de
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-info:before {
+	border-color: #5bc0de
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
+	border-color: #2390b0;
+	background-color: #2390b0 !important
+}
+
+.pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
+	border-color: #5cb85c
+}
+
+.pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-success-o .icon, .pretty input:checked ~ .state.p-success-o .svg, .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon, .pretty.p-toggle .state.p-success-o .svg, .pretty.p-toggle .state.p-success-o svg {
+	color: #5cb85c;
+	stroke: #5cb85c
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-success:before {
+	border-color: #5cb85c
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
+	border-color: #357935;
+	background-color: #357935 !important
+}
+
+.pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty input:checked ~ .state.p-warning .icon, .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon, .pretty.p-toggle .state.p-warning .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+	border-color: #f0ad4e
+}
+
+.pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-warning-o .icon, .pretty input:checked ~ .state.p-warning-o .svg, .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon, .pretty.p-toggle .state.p-warning-o .svg, .pretty.p-toggle .state.p-warning-o svg {
+	color: #f0ad4e;
+	stroke: #f0ad4e
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-warning:before {
+	border-color: #f0ad4e
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
+	border-color: #c77c11;
+	background-color: #c77c11 !important
+}
+
+.pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
+	background-color: #d9534f !important
+}
+
+.pretty input:checked ~ .state.p-danger .icon, .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon, .pretty.p-toggle .state.p-danger .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
+	border-color: #d9534f
+}
+
+.pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-danger-o .icon, .pretty input:checked ~ .state.p-danger-o .svg, .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon, .pretty.p-toggle .state.p-danger-o .svg, .pretty.p-toggle .state.p-danger-o svg {
+	color: #d9534f;
+	stroke: #d9534f
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-danger:before {
+	border-color: #d9534f
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
+	border-color: #a02622;
+	background-color: #a02622 !important
+}
+
+#ymca-component #ymca-shell-events .ymca-event-card {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	box-shadow: rgba(0,0,0,0.2) 1px 2px 1px -1px,rgba(1,0,0,0.2) 1px 1px 1px 0px,rgba(1,0,0,0.2) 1px 1px 3px 1px;
+	color: rgba(0,0,0,0.9);
+	display: block;
+	font-weight: 400;
+	width: 400px;
+	position: relative;
+	transition-delay: 0s;
+	transition-duration: 0.28s;
+	transition-property: box-shadow;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	margin: 10px;
+	padding: 10px
+}
+
+#ymca-component #ymca-shell-events .ymca-header {
+	text-align: center
+}
+
+#ymca-component #ymca-shell-events .ymca-event-card:hover {
+	box-shadow: 0 10px 10px rgba(0,0,0,0.3)
+}
+
+#ymca-component #ymca-shell-events .ymca-footer-actions {
+	display: flex
+}
+
+#ymca-component #ymca-shell-events .ymca-add-to-cart {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold
+}
+
+#ymca-component #ymca-shell-events .ymca-add-to-cart:hover {
+	color: #0060af;
+	background-color: #fff
+}
+
+#ymca-component #ymca-shell-events .ymca-add-to-cart {
+	text-align: center
+}
+
+#ymca-component #ymca-shell-events .ymca-attribute {
+	display: flex;
+	flex-flow: column;
+	text-align: center
+}
+
+#ymca-component #ymca-shell-events .ymca-attributes {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	margin: 10px;
+	text-align: center;
+	flex-grow: 1;
+	min-height: 46px
+}
+
+#ymca-component #ymca-shell-events .ymca-duration {
+	text-align: center
+}
+
+#ymca-component #ymca-shell-events .ymca-prices {
+	display: flex;
+	justify-content: space-around
+}
+
+#ymca-component #ymca-shell-events .ymca-member {
+	display: flex;
+	flex-flow: column;
+	text-align: center
+}
+
+#ymca-component #ymca-shell-events .ymca-non-member {
+	display: flex;
+	flex-flow: column;
+	text-align: center
+}
+
+#ymca-component #ymca-shell-events .ymca-help-event {
+	height: 20px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	float: right
+}
+
+.ymca-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #0060af;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #0060af;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #0060af;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #0060af;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #0060af;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px
+}
+
+.ymca-divider {
+	border-top: 1px solid #8c8b8b
+}
+
+.ymca-icon svg {
+	padding: 8px 0
+}
+
+.ymca-input {
+	background-clip: padding-box;
+	background-color: #fff;
+	border-bottom-color: #ced4da;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #ced4da;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #ced4da;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #ced4da;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+	-moz-box-flex: 1
+}
+
+.ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+.ymca-link-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+.ymca-link-redirect {
+	text-decoration: none;
+	color: #0060af
+}
+
+.ymca-select {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-origin: padding-box;
+	background-position: calc(-12px + 100%) 50%;
+	background-position-x: calc(-12px + 100%);
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: 8px 10px;
+	border-bottom-color: #80bdff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #80bdff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #80bdff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #80bdff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 16px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 28px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	text-transform: none;
+	transition-delay: 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s;
+	transition-property: background-color, border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+	-moz-appearance: none
+}
+
+.ymca-input-group {
+	display: flex;
+	flex-flow: column
+}
+
+.ymca-input-group--label {
+	font-size: 12px
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100
+}
+
+.pretty * {
+	box-sizing: border-box
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+	display: none
+}
+
+.pretty {
+	position: relative;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.pretty input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.pretty .state label {
+	position: initial;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 1.5em;
+	min-width: calc(1em + 2px)
+}
+
+.pretty .state label:before, .pretty .state label:after {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid transparent;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty .state label:before {
+	border-color: #bdc3c7
+}
+
+.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+	display: none
+}
+
+.pretty.p-switch input {
+	min-width: 2em
+}
+
+.pretty.p-switch .state {
+	position: relative
+}
+
+.pretty.p-switch .state:before {
+	content: '';
+	border: 1px solid #bdc3c7;
+	border-radius: 60px;
+	width: 2em;
+	box-sizing: unset;
+	height: calc(1em + 2px);
+	position: absolute;
+	top: 0;
+	top: calc((0% - (100% - 1em)) - 16%);
+	z-index: 0;
+	transition: all 0.5s ease
+}
+
+.pretty.p-switch .state label {
+	text-indent: 2.5em
+}
+
+.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+	transition: all 0.5s ease;
+	border-radius: 100%;
+	left: 0;
+	border-color: transparent;
+	transform: scale(0.8)
+}
+
+.pretty.p-switch .state label:after {
+	background-color: #bdc3c7 !important
+}
+
+.pretty.p-switch input:checked ~ .state:before {
+	border-color: #5a656b
+}
+
+.pretty.p-switch input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch input:checked ~ .state label:after {
+	background-color: #5a656b !important;
+	left: 1em
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+	border-color: #5a656b;
+	background-color: #5a656b !important
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:after {
+	background-color: #fff !important;
+	left: 1em
+}
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+	background-color: #428bca !important
+}
+
+.pretty input:checked ~ .state.p-primary .icon, .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
+	border-color: #428bca
+}
+
+.pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-primary-o .icon, .pretty input:checked ~ .state.p-primary-o .svg, .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon, .pretty.p-toggle .state.p-primary-o .svg, .pretty.p-toggle .state.p-primary-o svg {
+	color: #428bca;
+	stroke: #428bca
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-primary:before {
+	border-color: #428bca
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
+	border-color: #245682;
+	background-color: #245682 !important
+}
+
+.pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty input:checked ~ .state.p-info .icon, .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon, .pretty.p-toggle .state.p-info .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
+	border-color: #5bc0de
+}
+
+.pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-info-o .icon, .pretty input:checked ~ .state.p-info-o .svg, .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon, .pretty.p-toggle .state.p-info-o .svg, .pretty.p-toggle .state.p-info-o svg {
+	color: #5bc0de;
+	stroke: #5bc0de
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-info:before {
+	border-color: #5bc0de
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
+	border-color: #2390b0;
+	background-color: #2390b0 !important
+}
+
+.pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
+	border-color: #5cb85c
+}
+
+.pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-success-o .icon, .pretty input:checked ~ .state.p-success-o .svg, .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon, .pretty.p-toggle .state.p-success-o .svg, .pretty.p-toggle .state.p-success-o svg {
+	color: #5cb85c;
+	stroke: #5cb85c
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-success:before {
+	border-color: #5cb85c
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
+	border-color: #357935;
+	background-color: #357935 !important
+}
+
+.pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty input:checked ~ .state.p-warning .icon, .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon, .pretty.p-toggle .state.p-warning .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+	border-color: #f0ad4e
+}
+
+.pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-warning-o .icon, .pretty input:checked ~ .state.p-warning-o .svg, .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon, .pretty.p-toggle .state.p-warning-o .svg, .pretty.p-toggle .state.p-warning-o svg {
+	color: #f0ad4e;
+	stroke: #f0ad4e
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-warning:before {
+	border-color: #f0ad4e
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
+	border-color: #c77c11;
+	background-color: #c77c11 !important
+}
+
+.pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
+	background-color: #d9534f !important
+}
+
+.pretty input:checked ~ .state.p-danger .icon, .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon, .pretty.p-toggle .state.p-danger .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
+	border-color: #d9534f
+}
+
+.pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-danger-o .icon, .pretty input:checked ~ .state.p-danger-o .svg, .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon, .pretty.p-toggle .state.p-danger-o .svg, .pretty.p-toggle .state.p-danger-o svg {
+	color: #d9534f;
+	stroke: #d9534f
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-danger:before {
+	border-color: #d9534f
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
+	border-color: #a02622;
+	background-color: #a02622 !important
+}
+
+#ymca-component .ymca-cart-item {
+	display: flex;
+	flex-flow: row;
+	height: 50px;
+	padding: 5px
+}
+
+#ymca-component .ymca-time-range {
+	font-size: 12px !important;
+	color: #636466
+}
+
+#ymca-component .ymca-cart-item-sequence {
+	height: 40px;
+	width: 40px
+}
+
+#ymca-component .ymca-cart-item-description {
+	display: flex;
+	flex-flow: column
+}
+
+#ymca-component .ymca-quickcart-header {
+	display: flex;
+	flex-flow: column
+}
+
+#ymca-component .ymca-remove {
+	z-index: 100
+}
+
+#ymca-component .ymca-remove, #ymca-component .ymca-close-button {
+	background-color: white;
+	border-bottom-color: white;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-style: none;
+	border-bottom-width: 0px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: white;
+	border-left-style: none;
+	border-left-width: 0px;
+	border-right-color: white;
+	border-right-style: none;
+	border-right-width: 0px;
+	border-top-color: white;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-top-style: none;
+	border-top-width: 0px;
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	flex-shrink: 0;
+	font-size: 14px;
+	font-weight: 500;
+	height: 40px;
+	line-height: 36px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 8px;
+	margin-top: 0px;
+	min-width: 0px;
+	outline-color: white;
+	outline-style: none;
+	outline-width: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	text-decoration-color: white;
+	text-decoration-line: none;
+	text-decoration-style: solid;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	transition-delay: 0s, 0s;
+	transition-duration: 0.4s, 0.28s;
+	transition-property: background, box-shadow;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1),cubic-bezier(0.4, 0, 0.2, 1);
+	vertical-align: baseline;
+	white-space: nowrap;
+	width: 40px;
+	-moz-user-select: none
+}
+
+#ymca-component .ymca-close-button:hover {
+	background-color: lightgray
+}
+
+.ymca-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #0060af;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #0060af;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #0060af;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #0060af;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #0060af;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px
+}
+
+.ymca-divider {
+	border-top: 1px solid #8c8b8b
+}
+
+.ymca-icon svg {
+	padding: 8px 0
+}
+
+.ymca-input {
+	background-clip: padding-box;
+	background-color: #fff;
+	border-bottom-color: #ced4da;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #ced4da;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #ced4da;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #ced4da;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+	-moz-box-flex: 1
+}
+
+.ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+.ymca-link-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+.ymca-link-redirect {
+	text-decoration: none;
+	color: #0060af
+}
+
+.ymca-select {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-origin: padding-box;
+	background-position: calc(-12px + 100%) 50%;
+	background-position-x: calc(-12px + 100%);
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: 8px 10px;
+	border-bottom-color: #80bdff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #80bdff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #80bdff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #80bdff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 16px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 28px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	text-transform: none;
+	transition-delay: 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s;
+	transition-property: background-color, border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+	-moz-appearance: none
+}
+
+.ymca-input-group {
+	display: flex;
+	flex-flow: column
+}
+
+.ymca-input-group--label {
+	font-size: 12px
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100
+}
+
+.pretty * {
+	box-sizing: border-box
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+	display: none
+}
+
+.pretty {
+	position: relative;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.pretty input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.pretty .state label {
+	position: initial;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 1.5em;
+	min-width: calc(1em + 2px)
+}
+
+.pretty .state label:before, .pretty .state label:after {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid transparent;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty .state label:before {
+	border-color: #bdc3c7
+}
+
+.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+	display: none
+}
+
+.pretty.p-switch input {
+	min-width: 2em
+}
+
+.pretty.p-switch .state {
+	position: relative
+}
+
+.pretty.p-switch .state:before {
+	content: '';
+	border: 1px solid #bdc3c7;
+	border-radius: 60px;
+	width: 2em;
+	box-sizing: unset;
+	height: calc(1em + 2px);
+	position: absolute;
+	top: 0;
+	top: calc((0% - (100% - 1em)) - 16%);
+	z-index: 0;
+	transition: all 0.5s ease
+}
+
+.pretty.p-switch .state label {
+	text-indent: 2.5em
+}
+
+.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+	transition: all 0.5s ease;
+	border-radius: 100%;
+	left: 0;
+	border-color: transparent;
+	transform: scale(0.8)
+}
+
+.pretty.p-switch .state label:after {
+	background-color: #bdc3c7 !important
+}
+
+.pretty.p-switch input:checked ~ .state:before {
+	border-color: #5a656b
+}
+
+.pretty.p-switch input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch input:checked ~ .state label:after {
+	background-color: #5a656b !important;
+	left: 1em
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+	border-color: #5a656b;
+	background-color: #5a656b !important
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:after {
+	background-color: #fff !important;
+	left: 1em
+}
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+	background-color: #428bca !important
+}
+
+.pretty input:checked ~ .state.p-primary .icon, .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
+	border-color: #428bca
+}
+
+.pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-primary-o .icon, .pretty input:checked ~ .state.p-primary-o .svg, .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon, .pretty.p-toggle .state.p-primary-o .svg, .pretty.p-toggle .state.p-primary-o svg {
+	color: #428bca;
+	stroke: #428bca
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-primary:before {
+	border-color: #428bca
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
+	border-color: #245682;
+	background-color: #245682 !important
+}
+
+.pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty input:checked ~ .state.p-info .icon, .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon, .pretty.p-toggle .state.p-info .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
+	border-color: #5bc0de
+}
+
+.pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-info-o .icon, .pretty input:checked ~ .state.p-info-o .svg, .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon, .pretty.p-toggle .state.p-info-o .svg, .pretty.p-toggle .state.p-info-o svg {
+	color: #5bc0de;
+	stroke: #5bc0de
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-info:before {
+	border-color: #5bc0de
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
+	border-color: #2390b0;
+	background-color: #2390b0 !important
+}
+
+.pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
+	border-color: #5cb85c
+}
+
+.pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-success-o .icon, .pretty input:checked ~ .state.p-success-o .svg, .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon, .pretty.p-toggle .state.p-success-o .svg, .pretty.p-toggle .state.p-success-o svg {
+	color: #5cb85c;
+	stroke: #5cb85c
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-success:before {
+	border-color: #5cb85c
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
+	border-color: #357935;
+	background-color: #357935 !important
+}
+
+.pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty input:checked ~ .state.p-warning .icon, .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon, .pretty.p-toggle .state.p-warning .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+	border-color: #f0ad4e
+}
+
+.pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-warning-o .icon, .pretty input:checked ~ .state.p-warning-o .svg, .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon, .pretty.p-toggle .state.p-warning-o .svg, .pretty.p-toggle .state.p-warning-o svg {
+	color: #f0ad4e;
+	stroke: #f0ad4e
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-warning:before {
+	border-color: #f0ad4e
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
+	border-color: #c77c11;
+	background-color: #c77c11 !important
+}
+
+.pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
+	background-color: #d9534f !important
+}
+
+.pretty input:checked ~ .state.p-danger .icon, .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon, .pretty.p-toggle .state.p-danger .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
+	border-color: #d9534f
+}
+
+.pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-danger-o .icon, .pretty input:checked ~ .state.p-danger-o .svg, .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon, .pretty.p-toggle .state.p-danger-o .svg, .pretty.p-toggle .state.p-danger-o svg {
+	color: #d9534f;
+	stroke: #d9534f
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-danger:before {
+	border-color: #d9534f
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
+	border-color: #a02622;
+	background-color: #a02622 !important
+}
+
+.ymca-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #0060af;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #0060af;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #0060af;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #0060af;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #0060af;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px
+}
+
+.ymca-divider {
+	border-top: 1px solid #8c8b8b
+}
+
+.ymca-icon svg {
+	padding: 8px 0
+}
+
+.ymca-input {
+	background-clip: padding-box;
+	background-color: #fff;
+	border-bottom-color: #ced4da;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #ced4da;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #ced4da;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #ced4da;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	overflow: visible;
+	overflow-x: visible;
+	overflow-y: visible;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	transition-delay: 0s, 0s;
+	transition-duration: 0.15s, 0.15s;
+	transition-property: border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out;
+	-moz-box-flex: 1
+}
+
+.ymca-label {
+	font-size: 12px;
+	padding-bottom: 2px
+}
+
+.ymca-link-button {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #00aeef;
+	background-image: none;
+	background-origin: padding-box;
+	background-position: 0% 0%;
+	background-position-x: 0%;
+	background-position-y: 0%;
+	background-repeat: repeat;
+	background-size: auto auto;
+	border-bottom-color: #00aeef;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-collapse: collapse;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #00aeef;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #00aeef;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-spacing: 0px 0px;
+	border-top-color: #00aeef;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	vertical-align: middle
+}
+
+.ymca-link-redirect {
+	text-decoration: none;
+	color: #0060af
+}
+
+.ymca-select {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #fff;
+	background-origin: padding-box;
+	background-position: calc(-12px + 100%) 50%;
+	background-position-x: calc(-12px + 100%);
+	background-position-y: 50%;
+	background-repeat: no-repeat;
+	background-size: 8px 10px;
+	border-bottom-color: #80bdff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0;
+	border-image-repeat: stretch stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: #80bdff;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: #80bdff;
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: #80bdff;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: #495057;
+	display: block;
+	flex-basis: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	font-size: 16px;
+	font-weight: 400;
+	height: 38px;
+	line-height: 21px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	padding-bottom: 6px;
+	padding-left: 12px;
+	padding-right: 28px;
+	padding-top: 6px;
+	position: relative;
+	text-align: start;
+	text-transform: none;
+	transition-delay: 0s, 0s, 0s;
+	transition-duration: 0.15s, 0.15s, 0.15s;
+	transition-property: background-color, border-color, box-shadow;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out;
+	-moz-appearance: none
+}
+
+.ymca-input-group {
+	display: flex;
+	flex-flow: column
+}
+
+.ymca-input-group--label {
+	font-size: 12px
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 100
+}
+
+.pretty * {
+	box-sizing: border-box
+}
+
+.pretty input:not([type='checkbox']):not([type='radio']) {
+	display: none
+}
+
+.pretty {
+	position: relative;
+	display: inline-block;
+	margin-right: 1em;
+	white-space: nowrap;
+	line-height: 1
+}
+
+.pretty input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	min-width: 1em;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	cursor: pointer
+}
+
+.pretty .state label {
+	position: initial;
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	text-indent: 1.5em;
+	min-width: calc(1em + 2px)
+}
+
+.pretty .state label:before, .pretty .state label:after {
+	content: '';
+	width: calc(1em + 2px);
+	height: calc(1em + 2px);
+	display: block;
+	box-sizing: border-box;
+	border-radius: 0;
+	border: 1px solid transparent;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: calc((0% - (100% - 1em)) - 8%);
+	background-color: transparent
+}
+
+.pretty .state label:before {
+	border-color: #bdc3c7
+}
+
+.pretty .state.p-is-hover, .pretty .state.p-is-indeterminate {
+	display: none
+}
+
+.pretty.p-switch input {
+	min-width: 2em
+}
+
+.pretty.p-switch .state {
+	position: relative
+}
+
+.pretty.p-switch .state:before {
+	content: '';
+	border: 1px solid #bdc3c7;
+	border-radius: 60px;
+	width: 2em;
+	box-sizing: unset;
+	height: calc(1em + 2px);
+	position: absolute;
+	top: 0;
+	top: calc((0% - (100% - 1em)) - 16%);
+	z-index: 0;
+	transition: all 0.5s ease
+}
+
+.pretty.p-switch .state label {
+	text-indent: 2.5em
+}
+
+.pretty.p-switch .state label:before, .pretty.p-switch .state label:after {
+	transition: all 0.5s ease;
+	border-radius: 100%;
+	left: 0;
+	border-color: transparent;
+	transform: scale(0.8)
+}
+
+.pretty.p-switch .state label:after {
+	background-color: #bdc3c7 !important
+}
+
+.pretty.p-switch input:checked ~ .state:before {
+	border-color: #5a656b
+}
+
+.pretty.p-switch input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch input:checked ~ .state label:after {
+	background-color: #5a656b !important;
+	left: 1em
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state:before {
+	border-color: #5a656b;
+	background-color: #5a656b !important
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:before {
+	opacity: 0
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state label:after {
+	background-color: #fff !important;
+	left: 1em
+}
+
+.pretty input:checked ~ .state.p-primary label:after, .pretty.p-toggle .state.p-primary label:after {
+	background-color: #428bca !important
+}
+
+.pretty input:checked ~ .state.p-primary .icon, .pretty input:checked ~ .state.p-primary .svg, .pretty.p-toggle .state.p-primary .icon, .pretty.p-toggle .state.p-primary .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-primary-o label:before, .pretty.p-toggle .state.p-primary-o label:before {
+	border-color: #428bca
+}
+
+.pretty input:checked ~ .state.p-primary-o label:after, .pretty.p-toggle .state.p-primary-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-primary-o .icon, .pretty input:checked ~ .state.p-primary-o .svg, .pretty input:checked ~ .state.p-primary-o svg, .pretty.p-toggle .state.p-primary-o .icon, .pretty.p-toggle .state.p-primary-o .svg, .pretty.p-toggle .state.p-primary-o svg {
+	color: #428bca;
+	stroke: #428bca
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-primary:before {
+	border-color: #428bca
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-primary:before {
+	background-color: #428bca !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-primary:before {
+	border-color: #245682;
+	background-color: #245682 !important
+}
+
+.pretty input:checked ~ .state.p-info label:after, .pretty.p-toggle .state.p-info label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty input:checked ~ .state.p-info .icon, .pretty input:checked ~ .state.p-info .svg, .pretty.p-toggle .state.p-info .icon, .pretty.p-toggle .state.p-info .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-info-o label:before, .pretty.p-toggle .state.p-info-o label:before {
+	border-color: #5bc0de
+}
+
+.pretty input:checked ~ .state.p-info-o label:after, .pretty.p-toggle .state.p-info-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-info-o .icon, .pretty input:checked ~ .state.p-info-o .svg, .pretty input:checked ~ .state.p-info-o svg, .pretty.p-toggle .state.p-info-o .icon, .pretty.p-toggle .state.p-info-o .svg, .pretty.p-toggle .state.p-info-o svg {
+	color: #5bc0de;
+	stroke: #5bc0de
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-info-o label:after {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-info:before {
+	border-color: #5bc0de
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-info:before {
+	background-color: #5bc0de !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-info:before {
+	border-color: #2390b0;
+	background-color: #2390b0 !important
+}
+
+.pretty input:checked ~ .state.p-success label:after, .pretty.p-toggle .state.p-success label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty input:checked ~ .state.p-success .icon, .pretty input:checked ~ .state.p-success .svg, .pretty.p-toggle .state.p-success .icon, .pretty.p-toggle .state.p-success .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-success-o label:before, .pretty.p-toggle .state.p-success-o label:before {
+	border-color: #5cb85c
+}
+
+.pretty input:checked ~ .state.p-success-o label:after, .pretty.p-toggle .state.p-success-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-success-o .icon, .pretty input:checked ~ .state.p-success-o .svg, .pretty input:checked ~ .state.p-success-o svg, .pretty.p-toggle .state.p-success-o .icon, .pretty.p-toggle .state.p-success-o .svg, .pretty.p-toggle .state.p-success-o svg {
+	color: #5cb85c;
+	stroke: #5cb85c
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-success-o label:after {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-success:before {
+	border-color: #5cb85c
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-success:before {
+	background-color: #5cb85c !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-success:before {
+	border-color: #357935;
+	background-color: #357935 !important
+}
+
+.pretty input:checked ~ .state.p-warning label:after, .pretty.p-toggle .state.p-warning label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty input:checked ~ .state.p-warning .icon, .pretty input:checked ~ .state.p-warning .svg, .pretty.p-toggle .state.p-warning .icon, .pretty.p-toggle .state.p-warning .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-warning-o label:before, .pretty.p-toggle .state.p-warning-o label:before {
+	border-color: #f0ad4e
+}
+
+.pretty input:checked ~ .state.p-warning-o label:after, .pretty.p-toggle .state.p-warning-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-warning-o .icon, .pretty input:checked ~ .state.p-warning-o .svg, .pretty input:checked ~ .state.p-warning-o svg, .pretty.p-toggle .state.p-warning-o .icon, .pretty.p-toggle .state.p-warning-o .svg, .pretty.p-toggle .state.p-warning-o svg {
+	color: #f0ad4e;
+	stroke: #f0ad4e
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label:after {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-warning:before {
+	border-color: #f0ad4e
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-warning:before {
+	background-color: #f0ad4e !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-warning:before {
+	border-color: #c77c11;
+	background-color: #c77c11 !important
+}
+
+.pretty input:checked ~ .state.p-danger label:after, .pretty.p-toggle .state.p-danger label:after {
+	background-color: #d9534f !important
+}
+
+.pretty input:checked ~ .state.p-danger .icon, .pretty input:checked ~ .state.p-danger .svg, .pretty.p-toggle .state.p-danger .icon, .pretty.p-toggle .state.p-danger .svg {
+	color: #fff;
+	stroke: #fff
+}
+
+.pretty input:checked ~ .state.p-danger-o label:before, .pretty.p-toggle .state.p-danger-o label:before {
+	border-color: #d9534f
+}
+
+.pretty input:checked ~ .state.p-danger-o label:after, .pretty.p-toggle .state.p-danger-o label:after {
+	background-color: transparent
+}
+
+.pretty input:checked ~ .state.p-danger-o .icon, .pretty input:checked ~ .state.p-danger-o .svg, .pretty input:checked ~ .state.p-danger-o svg, .pretty.p-toggle .state.p-danger-o .icon, .pretty.p-toggle .state.p-danger-o .svg, .pretty.p-toggle .state.p-danger-o svg {
+	color: #d9534f;
+	stroke: #d9534f
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-danger-o label:after {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch input:checked ~ .state.p-danger:before {
+	border-color: #d9534f
+}
+
+.pretty.p-switch.p-fill input:checked ~ .state.p-danger:before {
+	background-color: #d9534f !important
+}
+
+.pretty.p-switch.p-slim input:checked ~ .state.p-danger:before {
+	border-color: #a02622;
+	background-color: #a02622 !important
+}
+
+#ymca-component {
+	font-family: Verdana;
+	font-size: 16px;
+	scroll-behavior: smooth;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0
+}
+
+#ymca-component .ymca-shell-events {
+	padding-top: 60px;
+	width: 100%
+}
+
+#ymca-component .ymca-shell-quick-cart {
+	display: inline-block;
+	white-space: nowrap
+}
+
+#ymca-component .ymca-spacer {
+	flex-grow: 1
+}
+
+#ymca-component #ymca-shell-quickcart .ymca-quick-cart {
+	height: 100%;
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+	right: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-top: 0px;
+	transition: 0.5s;
+	background-color: white;
+	box-shadow: rgba(0,0,0,0.2) 0px 2px 1px -1px,rgba(0,0,0,0.14) 0px 1px 1px 0px,rgba(0,0,0,0.12) 0px 1px 3px 0px;
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+	justify-content: space-between;
+	word-break: keep-all;
+	white-space: nowrap
+}
+
+@media screen and (max-width: 700px) {
+	#ymca-component #ymca-shell-quickcart .ymca-quick-cart {
+		width: 0
+	}
+}@media screen and (min-width: 701px) {
+	#ymca-component #ymca-shell-quickcart .ymca-quick-cart {
+		width: 0
+	}
+}#ymca-component #ymca-shell-quickcart .ymca-quickcart-header {
+	display: flex;
+	flex-flow: column;
+	background-color: white;
+	color: #231f20;
+	box-shadow: rgba(0,0,0,0.2) 0px 2px 1px -1px,rgba(0,0,0,0.14) 0px 1px 1px 0px,rgba(0,0,0,0.12) 0px 1px 3px 0px;
+	flex-grow: 1;
+	max-height: 100px;
+	margin-bottom: 10px;
+	padding-bottom: 10px
+}
+
+#ymca-component #ymca-shell-quickcart .ymca-quickcart-body {
+	overflow-y: auto;
+	flex-grow: 1
+}
+
+#ymca-component #ymca-shell-quickcart .ymca-quickcart-footer {
+	max-height: 50px;
+	display: flex;
+	flex-flow: row;
+	background-color: white;
+	color: #ffffff;
+	padding: 5px;
+	height: 50px;
+	flex-grow: 1;
+	box-shadow: rgba(0,0,0,0.2) 0px 2px 1px -1px,rgba(0,0,0,0.14) 0px 1px 1px 0px,rgba(0,0,0,0.12) 0px 1px 3px 0px,rgba(0,0,0,0.12) 0px 1px 3px 0px
+}
+
+#ymca-component #ymca-shell-quickcart .ymca-quick-cart .ymca-close-button {
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px
+}
+
+#ymca-component #ymca-shell-quickcart .ymca-check-out {
+	width: 100%
+}
+
+#ymca-component #ymca-shell-quickcart .ymca-close-button:hover {
+	transform: matrix(1.1, 0, 0, 1.1, 0, 0);
+	transition-duration: 0.3s;
+	transition-property: transform
+}
+ 
