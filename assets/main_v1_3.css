@@ -217,6 +217,10 @@ body * {
 	margin-bottom: 1rem
 }*/
 
+.list-container {
+	margin-bottom: 1rem
+}
+
 @media (min-width: 550px) {
 	.list-container:not(: last-child) {
 		margin-bottom: 2rem
