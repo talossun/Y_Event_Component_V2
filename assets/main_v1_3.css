@@ -7,7 +7,7 @@
 	transition-timing-function: ease-out;
 	-webkit-transition-property: none;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing:grayscale;
+	-moz-osx-font-smoothing: grayscale;
 	transition-property: none
 }
 
@@ -179,6 +179,7 @@ body * {
 	color: black;
 	color: var(--text)
 }
+
 .grid {
 	display: block;
 	padding: 4rem 1rem
@@ -395,6 +396,17 @@ div.list {
 	color: var(--high)
 }
 
+.product-brand i {
+	font-size: .50505050rem;
+	text-transform: uppercase;
+	font-family: inherit;
+	line-height: .8rem;
+	padding-top: .45rem;
+	padding-bottom: .1rem;
+	color: dimgray;
+	color: var(--high)
+}
+
 main.list {
 	width: 100%;
 	min-height: 100vh;
@@ -432,6 +444,7 @@ main.list .list-container {
 	padding-top: .25rem;
 	padding-bottom: .25rem
 }
+
 .startendtime {
 	font-size: .6464646465rem;
 	background-color: rgba(0, 0, 0, 0.05);
@@ -439,6 +452,7 @@ main.list .list-container {
 	padding: 0.3rem;
 	margin: 0.3rem 0;
 }
+
 .add-to-cart-cta {
 	padding: 0.25rem;
 	border-radius: 0.15rem;
@@ -450,6 +464,7 @@ main.list .list-container {
 	border-color: transparent !important;
 	color: #ffffff;
 }
+
 .add-to-cart-cta:hover {
 	background-color: #20bdbe;
 	border-color: transparent !important;
