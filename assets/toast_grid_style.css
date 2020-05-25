@@ -1,0 +1,267 @@
+/*-----------------------------------*\
+
+  $VARIABLES
+
+\*-----------------------------------*/
+
+$baseline: 1.4444rem;
+$baseline-unitless: 1.4444;
+
+/*-----------------------------------*\
+
+  $RESET
+
+\*-----------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+}
+
+p, ul, ol, table, hr, pre {
+  margin-bottom: $baseline;
+}
+
+@import 'lib/all';
+
+/*-----------------------------------*\
+
+  $TYPE
+
+\*-----------------------------------*/
+
+h1, .alpha, %alpha {
+  margin-bottom: $baseline*2;
+
+  font-size: $baseline;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  orphans: 3;
+  widows: 3;
+
+  @media (max-width: 700px) {
+    margin-bottom: $baseline;
+
+    font-size: $baseline*1.2;
+  }
+}
+
+h2, .beta, %beta {
+  padding-top: $baseline/2;
+  margin-bottom: $baseline/2;
+
+  font-size: 1.384615385rem;
+  font-weight: 400;
+  line-height: .96;
+  orphans: 3;
+  widows: 3;
+}
+
+h3, .gamma, %gamma {
+  padding-top: $baseline/2;
+  margin-bottom: $baseline/2;
+
+  line-height: $baseline-unitless;
+}
+
+code, pre {
+  font: 83.333%/1.5333 "Cachet", Monaco, monospace;
+
+  background-color: #f6f7f8;
+  border-radius: .25em;
+}
+
+pre {
+  overflow: scroll;
+  padding: $baseline;
+
+  i {
+    font-style: normal;
+    color: #c26262;
+  }
+
+  b {
+    color: #b5bd68;
+  }
+}
+
+.promo {
+  text-align: center;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+
+  &:hover {
+    color: lighten(#007ee5, 15%);
+  }
+}
+
+/*-----------------------------------*\
+
+  $BUTTONS
+
+\*-----------------------------------*/
+
+.butt {
+  display: inline-block;
+  margin: $baseline/2;
+  padding: $baseline/2 $baseline;
+
+  border-radius: .25em;
+  box-shadow: inset 0 0 0 1px lighten(#007ee5, 15%);
+  text-decoration: none;
+  color: lighten(#007ee5, 15%);
+
+  &:hover {
+    color: lighten(#007ee5, 15%);
+  }
+}
+
+  .butt--primary {
+    background-color: lighten(#007ee5, 15%);
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+/*-----------------------------------*\
+
+  $MAIN
+
+\*-----------------------------------*/
+
+html {
+  font: 112.5%/1.444444444 'CachetBook', Verdana;
+  -webkit-font-smoothing: antialiased;
+
+  background-color: white;
+  color: #47525d;
+
+  @media (max-width: 700px) {
+    font-size: 93.75%;
+  }
+}
+
+/*-----------------------------------*\
+
+  $PAGE
+
+\*-----------------------------------*/
+
+.site__header {
+  padding-bottom: $baseline;
+  margin-bottom: $baseline;
+
+  box-shadow: inset 0 -2px invert(darken(#f6f8fa, 12%));
+}
+
+  .site__title {
+    margin-bottom: 0;
+  }
+
+.wrap {
+  margin: 0 auto;
+  padding: $baseline;
+}
+
+// Styles exclusive to demo
+
+@each $i in $DE-col-groups {
+  .grid--demo [class*="-of-#{$i}"] {
+    height: $baseline;
+    margin-bottom: $baseline;
+
+    background-clip: content-box;
+    background-color: rgba(123, 137, 148, ($i*0.03));
+  }
+}
+
+.grid--demo {
+  * {
+    white-space: nowrap;
+    &:after {
+      content: attr(class);
+
+      bottom: 100%;
+      left: 50%;
+      padding: $baseline/4 $baseline/2;
+      position: absolute;
+      -webkit-transform: translateX(-50%) rotate(3deg);
+      width: auto;
+      z-index: 2;
+
+      font: 83.333%/1.5333 "Source Code Pro", Monaco, monospace;
+
+      background-color: rgba(71,82,93,.8);
+      border-radius: .25em;
+      color: #fff;
+      opacity: 0;
+      -webkit-transition: .3s cubic-bezier(0.905, -0.250, 0.520, 1.410);
+      pointer-events: none;
+    }
+
+    &:hover:after {
+      margin-bottom: $baseline/2;
+
+      opacity: 1;
+      -webkit-transform: translateX(-50%);
+    }
+
+    &:before {
+      content: '';
+
+      bottom: 100%;
+      left: 50%;
+      margin-bottom: -$baseline;
+      position: absolute;
+      -webkit-transform: translateX(-50%) rotate(3deg);
+      z-index: 2;
+
+      border: $baseline/2 solid transparent;
+      border-top-color: rgba(71,82,93,.8);
+      opacity: 0;
+      -webkit-transition: .3s cubic-bezier(0.905, -0.250, 0.520, 1.410);
+      pointer-events: none;
+    }
+
+    &:hover:before {
+      margin-bottom: -$baseline/2;
+
+      opacity: 1;
+      -webkit-transform: translateX(-50%);
+    }
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+}
+
+/*-----------------------------------*\
+
+  $FOOTER
+
+\*-----------------------------------*/
+
+.site__footer {
+  background-color: #47525d;
+  background-image: linear-gradient(rgba(200,255,255,0), rgba(200,255,255,.1));
+  color: transparentize(#eceded, .2);
+
+  a:hover {
+    color: lighten(#007ee5, 15%);
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
